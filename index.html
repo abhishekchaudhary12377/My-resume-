@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi Web protfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(3, 3, 53);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+
+        }
+        nav ul li a:hover{
+          
+            color:rgb(108, 108, 221);
+            font-size: 1.2rem;
+        }
+
+        .loader{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 20px solid rgb(234, 255, 0);
+            border-top:20px solid  rgb(20, 107, 30);
+            animation: rotateanim 1s ease-in 0s infinite normal;
+        }
+        
+        @keyframes rotateanim {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+
+
+
+
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 70px 0;
+
+        }
+        .firstsection> div{
+            width: 30%;
+        
+        }
+        .leftSection{
+       
+            font-size: 2rem;
+        }
+
+        .leftSection .btn{
+       
+            padding: 5px;
+            background-color: rgb(60, 14, 102);
+            color: white;
+            border:2px solid white ;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .leftSection .btn:hover{
+            color: #a7a7c1;
+            font-size: 1rem;
+            
+        }
+
+        .leftSection .buttons{
+            padding: 5px;
+            background-color: rgb(60, 14, 102);
+            color: white;
+            border:2px solid white ;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+           
+        }
+
+
+        .leftSection .buttons:hover{
+         color: #c1bed3;
+         font-size: 1rem;
+        }
+
+    
+
+        .rightSection img{
+            width: 80%;
+            margin: 50px 0px;
+           filter: drop-shadow(5px 5px 10px blueviolet );
+           transition: 0.3s ease;
+         
+        }
+        
+        .rightSection img:hover{
+
+            filter: drop-shadow(16px 5px 20px burlywood);
+        }
+
+
+        .purple{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vw;
+
+        }
+        main hr{
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem ;
+        }
+        .text-gray{
+            color: gray;
+        }
+
+        .secondSection .box{
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin:0 90px ;
+
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+
+        }
+        .vertical-title{
+            position: relative;
+            top: 77px;
+            width: 130px;
+            font-size: 12px;
+       
+       }
+
+        .vertical-desc{
+            position: relative;
+            top: 80px;
+            color: gray;
+            width: 170px;
+            font-size: 9px;
+        
+
+        }
+        .footer{
+            background-color: rgb(5, 5, 53);
+           
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px;
+            justify-content: space-evenly;
+
+            }
+            .footer ul{
+                list-style-type: none;
+            }
+
+            .footer> div{
+                width: 250px;
+
+            }
+            footer .footer-rights{
+                text-align: center;
+                color: gray;
+                padding: 12px 0;
+            }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhi's WebSite.Demo</div>
+            <div class="right">
+                <ul>
+                     <li><a href="http://localhost/akreesoft/home/">Home</a></li>
+                     <li><a href="http://localhost/akreesoft/about/">About</a></li>
+                     <li><a href="http://localhost/akreesoft/services/">Service</a></li>
+                     <li><a href="http://localhost/akreesoft/portfolio/">Blog</a></li>
+                     <li><a href="http://localhost/akreesoft/contact/">Contact Us</a></li>
+                  
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftSection">  <div class="loader"></div>Hi, My name is <span class="purple">Abhishek Chaudhary </span>and i am a Student it <span class="purple">Bsc.IT</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+
+
+                <button class="buttons">Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+
+
+         
+            <div class="rightSection"><img src="abhi.png" alt="">
+            <div class="image">
+            </div>
+        </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What i have done</span>
+            <h1>Work Experience</h1>
+
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="cc.png" alt="">
+                <div class="vertical-title">
+                    HTML Developer(2020-2024)
+                 </div>
+
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vero totam voluptate in officia exercitationem blanditiis, voluptatibus vel, quam, quaerat minima explicabo distinctio. Facere, commodi? Dolorum deleniti provident magnam.
+                </div>
+            </div>
+
+
+                <div class="vertical">
+                <img class="image-top" src="facebook.png" alt="">
+                <div class="vertical-title">
+                    CSS Developer (2020-2024)
+                 </div>
+                <div class="vertical-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto quod illo, non aut et, eligendi sapiente magnam delectus, quibusdam tempore error nesciunt atque obcaecati optio? Officiis commodi aperiam voluptatum.
+                </div>
+                </div>
+
+
+
+
+
+        
+                    <div class="vertical">
+                        <img class="image-top" src="insta.jpeg" alt="">
+                    <div class="vertical-title">
+                        Java Script Developer (2020-2024)
+                     </div>
+    
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vero totam voluptate in officia exercitationem blanditiis, voluptatibus vel, quam, quaerat minima explicabo distinctio. Facere, commodi? Dolorum deleniti provident magnam.
+                    </div>
+                </div>
+    
+    
+                    <div class="vertical">
+                    <img class="image-top" src="twitter.png" alt="">
+                    <div class="vertical-title">
+                        Python Program(2020-2024)
+                     </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt architecto quod illo, non aut et, eligendi sapiente magnam delectus, quibusdam tempore error nesciunt atque obcaecati optio? Officiis commodi aperiam voluptatum.
+                    </div>
+                    </div>
+
+
+
+
+                    <div class="vertical">
+                        <img class="image-top" src="tytub.png" alt="">
+                    <div class="vertical-title">
+                        Machin Learning (2020-2024)
+                     </div>
+    
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vero totam voluptate in officia exercitationem blanditiis, voluptatibus vel, quam, quaerat minima explicabo distinctio. Facere, commodi? Dolorum deleniti provident magnam.
+                    </div>
+                </div>
+
+
+                
+
+                <div class="vertical">
+                    <img class="image-top" src="cc.png" alt="">
+                <div class="vertical-title">
+                    AI Developer (2020-2024)
+                 </div>
+
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vero totam voluptate in officia exercitationem blanditiis, voluptatibus vel, quam, quaerat minima explicabo distinctio. Facere, commodi? Dolorum deleniti provident magnam.
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+        <div class="footer-first">
+            <h3>Abhi Developer Protfolio</h3>
+        </div>
+        <div class="footer-Second">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+            </ul>
+
+        </div>
+        <div class="footer-Third">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+            </ul>
+
+        </div>
+        <div class="footer-Fourth">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-rights">
+        Copywrights&#169; abhi.com | All rights reserved
+    </div>
+
+
+
+
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Full Stack Web Development', ' App Developer', 'Python Programmer', 'Video Editing'],
+      typeSpeed: 50,
+    });
+  </script>
+    
+</body>
+</html>
